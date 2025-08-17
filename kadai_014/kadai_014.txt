@@ -1,0 +1,9 @@
+price1 = 100
+price2 = 200
+tax = 1.1  # グローバルスコープで定義
+
+def total():
+    return price1 + price2  # グローバル変数 price1, price2 を参照
+
+# グローバルスコープの tax を使って合計金額を計算
+print(total() * tax)
